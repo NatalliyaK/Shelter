@@ -7,20 +7,23 @@ module.exports = ({ development }) => ({
     devtool: development ? 'inline-source-map' : false,
     entry: './src/index.js',
     output: {
+        filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js',
+        clean: true,
     },
     plugins:
         [
             new HtmlWebpackPlugin({
-            title: "shelter",
-            filename: "index.html",
             template: "./src/index.html"
         }),
-            new MiniCssExtractPlugin()
+            new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }),
         ],
     module: {
         rules: [
+            {
+                test: /\.html$/i,
+                loader: "html-loader",
+            },
             {
                 test: /\.scss$/i,
                 use: [
@@ -28,6 +31,10 @@ module.exports = ({ development }) => ({
                     "css-loader",
                     "sass-loader"
                 ],
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
             },
         ]
     }

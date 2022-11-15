@@ -2,13 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-    <link rel="stylesheet" href="css/index.scss">
+    <title>shelter</title>
 </head>
 <body>
+<header class="header">
+    <div class="header__wrapper wrapper">
+        <div class="header__logo">
+            <h1 class="header__title">Cozy House</h1>
+            <h2 class="header__subtitle">Shelter for pets in Boston</h2>
+        </div>
+        <nav>
+            <ul class="header__nav">
+                <li>About the shelter</li>
+                <li>Our pets</li>
+                <li>Help the shelter</li>
+                <li>Contacts</li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="start">
+    <div class="start__wrapper wrapper">
+        <div class="start__information">
+            <h2>Not only people need a house</h2>
+            <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
+            <button class="button button__text">Make a friend</button>
+        </div>
+        <div class="start__image">
+            <picture>
+                <source srcset="images/start-puppy/start-screen-puppy1280.png" type="image/png" media="(min-width: 768px) and (max-width: 1280px)">
+                <source srcset="images/start-puppy/start-screen-puppy768.png" type="image/png" media="(min-width: 320px) and (max-width: 768px)">
+                <source srcset="images/start-puppy/start-screen-puppy320.png" type="image/png" media="(max-width: 320px)">
+                <img src="images/start-puppy/start-screen-puppy1280.png" alt="Dog">
+            </picture>
+        </div>
+    </div>
 
+</section>
+<section class="about"></section>
+<section></section>
+<section class="help"></section>
+<section class="donate"></section>
+<footer>
+    <div class="footer__wrapper wrapper">
 
-
-<script src="./src/index.js"></script>
+    </div>
+</footer>
 </body>
 </html>
