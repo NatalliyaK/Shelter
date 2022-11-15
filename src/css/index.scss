@@ -93,6 +93,54 @@ body {
     justify-content: center;
   }
 
+  &__title {
+    font-family: $fontHeader;
+    font-size: 44px;
+    color: $colorText;
+  }
 
+  &__text {
+    padding: 42px 0;
+    font-size: 15px;
+    color: $colorTextStart;
+  }
 
+}
+
+@media (max-width: 1220px) {
+  .wrapper {
+    max-width: 1000px;
+  }
+
+  .start__wrapper {
+    flex-direction: column;
+
+    &__button {
+      padding-bottom: 100px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 708px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+}
+
+@media (max-width: 320px) {
+  .wrapper {
+    max-width: 257px;
+  }
+
+  .start__title {
+    font-size: 25px;
+
+    &__button {
+      padding-bottom: 64px;
+    }
+  }
 }
