@@ -136,6 +136,53 @@ body {
   }
 }
 
+.donation {
+  padding: 80px 0 100px;
+  background: $background;
+
+  &__wrapper {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;;
+  }
+
+  &__information {
+    flex-basis: 430px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__title {
+    font-family: $fontHeader;
+    font-size: 35px;
+    line-height: 130%;
+    color: $colorTitleAbout;
+  }
+
+  &__subtitle {
+    font-size: 15px;
+    line-height: 110%;
+    color: $colorTitleAbout;
+  }
+
+  &__text {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: $colorTextDonate;
+  }
+
+  &__button {
+    max-width: 349px;
+    font-size: 13px;
+    padding: 12px 2px;
+  }
+
+}
+
 @media (max-width: 1220px) {
   .wrapper {
     max-width: 900px;
@@ -164,6 +211,20 @@ body {
     &__information {
       flex-basis: 230px;
     }
+  }
+
+  .donation {
+
+    &__wrapper {
+      flex-direction: column-reverse;
+    }
+
+    &__information {
+      flex-basis: 230px;
+      align-items: center;
+      max-width: 380px;
+    }
+
 
   }
 }
@@ -206,4 +267,16 @@ body {
     }
   }
 
+  .donation {
+    padding: 42px;
+    gap: 42px;
+
+    &__title {
+      font-size: 25px;
+    }
+
+    &__subtitle {
+      line-height: 160%;
+    }
+  }
 }

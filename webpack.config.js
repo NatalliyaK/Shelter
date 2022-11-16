@@ -57,7 +57,7 @@ module.exports = ({ development }) => ({
                         plugins: [
                             ["gifsicle", { interlaced: true }],
                             ["jpegtran", { progressive: true }],
-                            ["optipng", { optimizationLevel: 7 }],
+                            ["optipng", { optimizationLevel: 5 }],
                             // Svgo configuration here https://github.com/svg/svgo#configuration
                             [
                                 "svgo",
