@@ -102,6 +102,7 @@ body {
   &__text {
     padding: 42px 0;
     font-size: 15px;
+    line-height: 160%;
     color: $colorTextStart;
   }
 }
@@ -133,6 +134,30 @@ body {
     line-height: 160%;
     color:$colorTextAbout;
     padding-top: 25px;
+  }
+}
+
+.help {
+  padding: 80px 0 100px;
+
+  &__title {
+    font-size: 35px;
+    line-height: 130%;
+    font-family: $fontHeader;
+    color: $colorTitleAbout;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+
+  &__information {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+    justify-content: center;
+  }
+
+  &__item-img {
+    padding-bottom: 30px;
   }
 }
 
@@ -183,6 +208,17 @@ body {
 
 }
 
+.footer {
+  background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+  padding-top: 40px;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 160px;
+  }
+}
+
 @media (max-width: 1220px) {
   .wrapper {
     max-width: 900px;
@@ -213,6 +249,12 @@ body {
     }
   }
 
+  .help {
+    &__information {
+      gap: 60px;
+    }
+  }
+
   .donation {
 
     &__wrapper {
@@ -227,6 +269,17 @@ body {
 
 
   }
+
+  .footer {
+
+    &__wrapper {
+      gap: 60px;
+    }
+
+    &__image {
+      align-self: center;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -236,6 +289,14 @@ body {
 
   .header__nav {
     display: none;
+  }
+
+  .help {
+
+    &__title {
+      font-size: 25px;
+      padding-bottom: 42px;
+    }
   }
 
 }
@@ -264,6 +325,17 @@ body {
     &__text {
       font-size: 15px;
       padding-top: 22px;
+    }
+  }
+
+  .help {
+
+    &__information {
+      gap: 30px;
+    }
+
+    &__item-img {
+      padding-bottom: 20px;
     }
   }
 
