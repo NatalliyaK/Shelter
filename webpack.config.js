@@ -28,7 +28,7 @@ module.exports = ({ development }) => ({
                 loader: "html-loader",
             },
             {
-                test: /\.scss$/i,
+                test: /\.(sass|css|scss)$/,
                 use: [
                     development ? "style-loader" : MiniCssExtractPlugin.loader,
                     "css-loader",

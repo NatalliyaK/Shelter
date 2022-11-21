@@ -137,6 +137,47 @@ body {
   }
 }
 
+.slider {
+  background: $background;
+  padding: 80px 0 100px;
+
+  &__title {
+    font-family: $fontHeader;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $colorTitleAbout;
+    text-align: center;
+  }
+
+  &__card {
+    background: $colorText;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.swiper {
+    &-slide-description {
+      font-size: 20px;
+      line-height: 23px;
+      font-family: $fontHeader;
+      letter-spacing: 0.06em;
+      color: $colorTitleAbout;
+    }
+
+    &-slide-button {
+      background: $colorText;
+      border: solid 1px $colorTitle;
+    }
+
+}
+.swiper {
+  width: 600px;
+  height: 300px;
+}
 .help {
   padding: 80px 0 100px;
 
@@ -221,7 +262,7 @@ body {
   &__questions,
   &__waiting {
     font-family: $fontHeader;
-    font-size: 35px;
+    font-size: 27px;
     line-height: 130%;
     color: $colorText;
     margin-bottom: 40px;
@@ -314,6 +355,10 @@ body {
 
   .header__nav {
     display: none;
+  }
+
+  .slider {
+    padding: 42px 0;
   }
 
   .help {
