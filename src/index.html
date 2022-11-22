@@ -5,6 +5,28 @@
     <title>shelter</title>
 </head>
 <body>
+<div class="header__mob">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<div class="popup active">
+    <section class="popup__header">
+        <div class="popup__logo">
+            <h1 class="popup__logo-title">Cozy House</h1>
+            <p class="popup__logo-subtitle">Shelter for pets in Boston</p>
+        </div>
+        <nav class="popup__navigation">
+            <ul class="popup__link">
+                <li class="popup__link-item"><a>About the shelter</a></li>
+                <li class="popup__link-item"><a>Our pets</a></li>
+                <li class="popup__link-item"><a>Help the shelter</a></li>
+                <li class="popup__link-item"><a>Contacts</a></li>
+            </ul>
+        </nav>
+
+    </section>
+</div>
 <header class="header">
     <div class="header__wrapper wrapper">
         <div class="header__logo">
@@ -55,9 +77,9 @@
     </div>
 </section>
 <section class="slider">
+    <h2 class="slider__title">Our friends who <br>
+        are looking for a house</h2>
     <div class="swiper wrapper">
-        <h2 class="slider__title">Our friends who <br>
-            are looking for a house</h2>
         <div class="slider__photo swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide slider__card">
@@ -102,10 +124,10 @@
             </div>
         </div>
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev custom-prev"></div>
+        <div class="swiper-button-next custom-next"></div>
     </div>
-<!--    <button class="button button__text">Get to know the rest</button>-->
+    <button class="button button__text slider__button">Get to know the rest</button>
 </section>
 <section class="help wrapper">
     <h2 class="help__title">How you can help <br> our shelter</h2>
