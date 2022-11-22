@@ -126,7 +126,7 @@ body {
     height: 100%;
     width: 320px;
     padding: 30px 10px;
-    background-color: #292929;
+    background-color: $colorButtonText;
     display: flex;
     flex-wrap: wrap;
   }
@@ -294,7 +294,6 @@ body {
       background: $colorText;
       border: solid 1px $colorTitle;
     }
-
 }
 
 .help {

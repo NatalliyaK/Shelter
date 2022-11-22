@@ -7,7 +7,7 @@ const path = require('path');
 module.exports = ({ development }) => ({
     mode: development ? 'development' : 'production',
     devtool: development ? 'inline-source-map' : false,
-    entry: './src/index.js',
+    entry: './src/js/index.js',
     output: {
         filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'dist'),

@@ -1,7 +1,7 @@
 import Swiper from 'swiper/bundle';
 
 import 'swiper/css/bundle';
-import './css/index.scss';
+import '../css/index.scss';
 
 import './action';
 
